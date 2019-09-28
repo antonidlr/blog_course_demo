@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_28_042338) do
+ActiveRecord::Schema.define(version: 2019_09_28_223607) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
@@ -38,6 +38,10 @@ ActiveRecord::Schema.define(version: 2019_09_28_042338) do
     t.string "link"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "sluq"
+    t.string "slug"
+    t.index ["slug"], name: "index_projects_on_slug", unique: true
+    t.index ["sluq"], name: "index_projects_on_sluq", unique: true
   end
 
 end
