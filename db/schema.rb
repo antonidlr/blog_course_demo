@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2019_09_27_002927) do
-=======
 ActiveRecord::Schema.define(version: 2019_09_30_005048) do
->>>>>>> projects
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
@@ -36,8 +32,6 @@ ActiveRecord::Schema.define(version: 2019_09_30_005048) do
     t.index ["slug"], name: "index_posts_on_slug", unique: true
   end
 
-<<<<<<< HEAD
-=======
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -48,5 +42,4 @@ ActiveRecord::Schema.define(version: 2019_09_30_005048) do
     t.index ["slug"], name: "index_projects_on_slug", unique: true
   end
 
->>>>>>> projects
 end
