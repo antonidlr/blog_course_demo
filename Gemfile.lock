@@ -119,7 +119,7 @@ GEM
     pg (1.1.4)
     posix-spawn (0.3.13)
     public_suffix (4.0.1)
-    puma (3.12.1)
+    puma (3.12.2)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
@@ -241,7 +241,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   mail_form (~> 1.5, >= 1.5.1)
   pg
-  puma (~> 3.11)
+  puma (~> 3.12)
   pygments.rb (~> 0.6.3)
   rails (~> 6.0.0)
   rails_12factor
